@@ -46,12 +46,12 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
 
 <figure>
 <figcaption><b>Confusion matrix (counts)</b></figcaption>
-<img src="results/aws-cf-counts.png" alt="AWS Confusion matrix (counts)" width="1000"/>
+<img src="results/aws-cf-counts.png" alt="AWS Confusion matrix (counts)" width="500"/>
 </figure>
 
 <figure>
 <figcaption><b>Confusion matrix (%)</b></figcaption>
-<img src="results/aws-cf-pcts.png" alt="AWS Confusion matrix (%)" width="1000"/>
+<img src="results/aws-cf-pcts.png" alt="AWS Confusion matrix (%)" width="500"/>
 </figure>
 
 
