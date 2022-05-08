@@ -101,6 +101,11 @@ https://arxiv.org/abs/2003.06505.
 </figure>
 
 <figure>
+<figcaption><b>Test accuracy:</b></figcaption>
+<img src="results/autogluon-test-acc.png" alt="AG Test accuracy:" width="500"/>
+</figure>
+
+<figure>
 <figcaption><b>Confusion matrix (counts):</b></figcaption>
 <img src="results/autogluon-cf-counts.png" alt="AG Confusion matrix (counts)" width="500"/>
 </figure>
