@@ -30,9 +30,16 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
         
 ## Results (including charts/tables) and your observations  
 
+To evaluate this experiment, I show the confusion matrices for each of the models. I judged the performance of models based on three criteria. 
+- One criteria was **training time**; the best model in terms of training time was the **AutoGluon** model, which took only 25 minutes to run, compared to the cloud models which each took 3-4 hours. 
+- Another criteria was the **display of evaluation metrics**, and this goes to the **Google Cloud AutoML Vision** model interface, since it provides the most comprehensive set of evaluation metrics, shows valuable information about the confidence with which each image was classified, and allows you to tune the confidence threshold to see how the precision and accuracy on each label change, although it would have been useful to tune this threshold separately for both labels.  
+- As for the last and most important criteria, based on the problem we are trying to solve with this model, out of all the metrics provided like accuracy, F1, precision, and recall, it is very important for the model to have **strong recall on the "destroyed" label**. This is because, as a practitioner, I would need to be confident that my model can correctly predict "destroyed" areas in order to help those in need in those areas. So the model with the best recall on the "destroyed" label is the **AWS Rekognition** model. 
+
+
 ### Model #1: Amazon Rekognition Custom Labels
 
 - Training time: 3h45m
+- Recall on "destroyed" label: 0.869
 
 <figure>
 <figcaption><b>Evaluation results, Per label performance</b></figcaption>
@@ -55,11 +62,28 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
 </figure>
 
 
+### Model #2: Google Cloud AutoML Vision
 
-<!-- ![AWS Evaluation results, Per label performance](results/aws-model-results.png "Evaluation results, Per label performance") 
+- Training time: 4h+
+- Recall on "destroyed" label: 0.822
 
-![AWS Examples of "no damage" test images classified correctly](results/aws-image-examples.png "Examples of "no damage" test images classified correctly") 
+<figure>
+<figcaption><b>Evaluation results</b></figcaption>
+<img src="results/gcav-model-results-1.png" alt="GCAV Evaluation results (1)" width="1000"/>
+<img src="results/gcav-model-results-2.png" alt="GCAV Evaluation results (2)" width="1000"/>
+</figure>
 
-![AWS Confusion matrix (counts)]( "Confusion matrix (counts)")
+<figure>
+<figcaption><b>Examples of "destroyed" test images classified correctly</b></figcaption>
+<img src="results/gcav-image-examples.png" alt="GCAV Examples of 'destroyed' test images classified correctly" width="1000"/>
+</figure>
 
-![AWS Confusion matrix (counts)](results/aws-cf-pcts.png "Confusion matrix (%)") -->
+<figure>
+<figcaption><b>Confusion matrix (counts)</b></figcaption>
+<img src="results/gcav-cf-counts.png" alt="GCAV Confusion matrix (counts)" width="500"/>
+</figure>
+
+<figure>
+<figcaption><b>Confusion matrix (%)</b></figcaption>
+<img src="results/gcav-cf-pcts.png" alt="GCAV Confusion matrix (%)" width="500"/>
+</figure>
