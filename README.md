@@ -29,3 +29,15 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
 **santa-rosa-wildfire_00000204_post_disaster.png**: Single test image that can be used for prediction with the **autogluon-model-training-and-prediction.ipynb** notebook using the **autogluon-predictor.ag** predictor.
         
 ## Results (including charts/tables) and your observations  
+
+### Model #1: Amazon Rekognition Custom Labels
+
+- Training time: 3h45m
+
+![AWS Evaluation results, Per label performance](results/aws-model-results.png "Evaluation results, Per label performance")
+
+![AWS Examples of "no damage" test images classified correctly](results/aws-image-examples.png "Examples of "no damage" test images classified correctly")
+
+![AWS Confusion matrix (counts)](results/aws-cf-counts.png "Confusion matrix (counts)")
+
+![AWS Confusion matrix (counts)](results/aws-cf-pcts.png "Confusion matrix (%)")
