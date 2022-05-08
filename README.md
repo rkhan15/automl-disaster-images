@@ -35,8 +35,8 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
 - Training time: 3h45m
 
 <figure>
-<img src="results/aws-model-results.png" alt="AWS Evaluation results, Per label performance" width="1000"/>
 <figcaption><b>Evaluation results, Per label performance</b></figcaption>
+<img src="results/aws-model-results.png" alt="AWS Evaluation results, Per label performance" width="1000"/>
 </figure>
 
 <img src="results/aws-image-examples.png" alt="Examples of 'no damage' test images classified correctly" width="1000"/>
