@@ -39,7 +39,12 @@ The xBD dataset already has train-validation-test splits from how I downloaded i
 <img src="results/aws-model-results.png" alt="AWS Evaluation results, Per label performance" width="1000"/>
 </figure>
 
-<img src="results/aws-image-examples.png" alt="Examples of 'no damage' test images classified correctly" width="1000"/>
+<figure>
+<figcaption><b>Examples of "no damage" test images classified correctly</b></figcaption>
+<img src="results/aws-image-examples.png" alt="AWS Examples of 'no damage' test images classified correctly" width="1000"/>
+</figure>
+
+
 
 <!-- ![AWS Evaluation results, Per label performance](results/aws-model-results.png "Evaluation results, Per label performance") 
 
