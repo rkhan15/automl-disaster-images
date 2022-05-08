@@ -42,22 +42,22 @@ To evaluate this experiment, I show the confusion matrices for each of the model
 - Recall on "destroyed" label: 0.869
 
 <figure>
-<figcaption><b>Evaluation results, Per label performance</b></figcaption>
+<figcaption><b>Evaluation results, Per label performance:</b></figcaption>
 <img src="results/aws-model-results.png" alt="AWS Evaluation results, Per label performance" width="1000"/>
 </figure>
 
 <figure>
-<figcaption><b>Examples of "no damage" test images classified correctly</b></figcaption>
+<figcaption><b>Examples of "no damage" test images classified correctly:</b></figcaption>
 <img src="results/aws-image-examples.png" alt="AWS Examples of 'no damage' test images classified correctly" width="1000"/>
 </figure>
 
 <figure>
-<figcaption><b>Confusion matrix (counts)</b></figcaption>
+<figcaption><b>Confusion matrix (counts):</b></figcaption>
 <img src="results/aws-cf-counts.png" alt="AWS Confusion matrix (counts)" width="500"/>
 </figure>
 
 <figure>
-<figcaption><b>Confusion matrix (%)</b></figcaption>
+<figcaption><b>Confusion matrix (%):</b></figcaption>
 <img src="results/aws-cf-pcts.png" alt="AWS Confusion matrix (%)" width="500"/>
 </figure>
 
@@ -68,22 +68,44 @@ To evaluate this experiment, I show the confusion matrices for each of the model
 - Recall on "destroyed" label: 0.822
 
 <figure>
-<figcaption><b>Evaluation results</b></figcaption>
+<figcaption><b>Evaluation results:</b></figcaption>
 <img src="results/gcav-model-results-1.png" alt="GCAV Evaluation results (1)" width="1000"/>
 <img src="results/gcav-model-results-2.png" alt="GCAV Evaluation results (2)" width="1000"/>
 </figure>
 
 <figure>
-<figcaption><b>Examples of "destroyed" test images classified correctly</b></figcaption>
+<figcaption><b>Examples of "destroyed" test images classified correctly:</b></figcaption>
 <img src="results/gcav-image-examples.png" alt="GCAV Examples of 'destroyed' test images classified correctly" width="1000"/>
 </figure>
 
 <figure>
-<figcaption><b>Confusion matrix (counts)</b></figcaption>
+<figcaption><b>Confusion matrix (counts):</b></figcaption>
 <img src="results/gcav-cf-counts.png" alt="GCAV Confusion matrix (counts)" width="500"/>
 </figure>
 
 <figure>
-<figcaption><b>Confusion matrix (%)</b></figcaption>
+<figcaption><b>Confusion matrix (%):</b></figcaption>
 <img src="results/gcav-cf-pcts.png" alt="GCAV Confusion matrix (%)" width="500"/>
+</figure>
+
+
+### Model #3: AutoGluon
+https://arxiv.org/abs/2003.06505.
+
+- Training time: 25m
+- Recall on "destroyed" label: 0.617
+
+<figure>
+<figcaption><b>Model results ("best config"):</b></figcaption>
+<img src="results/autogluon-model-results.png" alt="AG Model results ('best config')" width="500"/>
+</figure>
+
+<figure>
+<figcaption><b>Confusion matrix (counts):</b></figcaption>
+<img src="results/autogluon-cf-counts.png" alt="AG Confusion matrix (counts)" width="500"/>
+</figure>
+
+<figure>
+<figcaption><b>Confusion matrix (%):</b></figcaption>
+<img src="results/autogluon-cf-pcts.png" alt="AG Confusion matrix (%)" width="500"/>
 </figure>
